@@ -78,7 +78,7 @@ body {
   .card {
     display: flex;
     flex-direction: row-reverse;
-    column-gap: 8%;
+    column-gap: 5%;
     text-align: left;
   }
   .card__image {
@@ -88,22 +88,39 @@ body {
     flex: 1 1 0;
   }
   .card__text {
-    padding: 75px 0 50px 50px;
+    padding: 75px 0 50px 30px;
     flex: 1 1 0;
   }
   .card__text__title {
-    font-size: 40px;
+    font-size: 35px;
   }
   .card__text__stats-box {
     display: flex;
     justify-content: space-between;
-    padding-right: 100px;
   }
   .card_text_paragraph {
     margin: 30px 0 50px 0;
-    padding-right: 100px;
   }
   .card__text__stats__number {
     padding: 0 0 5px 0;
+  }
+}
+@media all and (min-width: 900px) {
+  .card {
+    column-gap: 8%;
+  }
+  .card__text {
+    padding: 75px 0 50px 50px;
+  }
+}
+@media all and (min-width: 1210px) {
+  .card__text__title {
+    font-size: 40px;
+  }
+  .card__text__stats-box {
+    padding-right: 100px;
+  }
+  .card_text_paragraph {
+    padding-right: 100px;
   }
 }
